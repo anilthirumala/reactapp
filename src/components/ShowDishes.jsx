@@ -1,7 +1,7 @@
 import React from 'react'
 import { DishContext } from '../context/DishContextProvider'
 export default function ShowDishes() {
-    const { dishes, setDishes } = React.useContext(DishContext)
+    const { dishes } = React.useContext(DishContext)
   return (
     <div>ShowDishes
       <div style={{display:'flex'}}>

@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+ 
 import './App.css';
 import DishContextProvider from './context/DishContextProvider';
 import ShowDishes from './components/ShowDishes';
