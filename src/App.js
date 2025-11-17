@@ -1,24 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import DishContextProvider from './context/DishContextProvider';
+import ShowDishes from './components/ShowDishes';
+import AddDish from './components/AddDish';
 
 function App() {
   return (
+    <DishContextProvider>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <ShowDishes />
+       <AddDish/>
+       <footer>
+        &copy; 2025 All rights reserved.
+        &reg;
+        &nbsp;
+       </footer>
     </div>
+    </DishContextProvider>
   );
 }
 
